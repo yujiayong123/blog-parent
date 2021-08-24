@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mszlu.blog.dao.mapper.SysUserMapper">
+
+    <select id="findAuthorById" resultType="com.mszlu.blog.dao.pojo.SysUser" parameterType="long">
+        select nickname from ms_sys_user where id = #{id}
+    </select>
+</mapper>
